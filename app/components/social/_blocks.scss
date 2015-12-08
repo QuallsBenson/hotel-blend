@@ -1,0 +1,39 @@
+
+
+.social-action-block{
+	text-align: center;
+}  
+
+.social-action,
+.social-action:not(.action--disabled):hover,
+.social-action:not(.action--disabled):active{
+	background-color: transparent;
+    color: #272d3a;
+    font-weight: bold;
+    border: none;
+    box-shadow: none;	
+}
+
+.social-action__icon{
+	font-size: 2em;
+}
+
+.social-action-block .social-action{
+
+
+	@include util-rem( font-size, 2.5 );
+
+
+	@include min-screen( $screen-sm ){
+
+		@include util-rem( font-size, 3.5 );
+
+	}
+
+	@include min-screen( $screen-md ){
+
+		@include util-rem( font-size, 4.5 );
+
+	}
+
+}

@@ -1,0 +1,13 @@
+
+
+.teaser-heading{
+
+	text-align: center;
+	@include util-rem( font-size, 2.5 );
+
+	@include min-screen( $screen-sm ){
+
+		@include util-rem( font-size, 4.5 );
+
+	}
+}  

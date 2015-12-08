@@ -324,7 +324,7 @@ $static-class: "."+$static-block-class !global;
 @mixin util-type( $size ){
 
 	font-size:   $size;
-	line-height: $size;
+	line-height: ($size * .8);
 	margin: ($size * .25) 0;
 
 }

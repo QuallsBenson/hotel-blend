@@ -1,0 +1,18 @@
+
+
+.social-action-section__column{
+
+	padding: 0px;
+
+	@include min-screen( $screen-sm ){
+
+		@include util-grid( 1 of 3, 5% );
+	
+	}
+
+}
+
+.social-action-section__row{
+	margin-right: -5%;
+	margin-left: 0px;
+}

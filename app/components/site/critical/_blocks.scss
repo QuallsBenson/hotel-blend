@@ -3,4 +3,23 @@
 .site{
 	height: 100%;
 	overflow-x: hidden;
+
+	font-size: 55%;
+
+
+	@include min-screen( $screen-sm ){
+
+		font-size: 75%;
+
+	}
+
+
+	@include min-screen( $screen-md ){
+
+		font-size: 85%;
+
+	}
+
+	overflow-y: scroll; /* has to be scroll, not auto */
+  	-webkit-overflow-scrolling: touch;
 }

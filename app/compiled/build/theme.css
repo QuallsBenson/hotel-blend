@@ -46,6 +46,96 @@
   display: block;
 }
 */
+@font-face {
+  font-family: "arcamajora";
+  src: url('/fonts/arcamajora.eot?1448494224');
+  src: url('/fonts/arcamajora.eot?&1448494224#iefix') format('embedded-opentype'), url('/fonts/arcamajora.svg?1448494224') format('svg'), url('/fonts/arcamajora.ttf?1448494224') format('truetype'), url('/fonts/arcamajora.woff?1448494224') format('woff'), url('/fonts/arcamajora.woff2?1448494224') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 3, ../../components/social/_blocks.scss */
+.social-action-block {
+  text-align: center;
+}
+
+/* line 7, ../../components/social/_blocks.scss */
+.social-action,
+.social-action:not(.action--disabled):hover,
+.social-action:not(.action--disabled):active {
+  background-color: transparent;
+  color: #272d3a;
+  font-weight: bold;
+  border: none;
+  box-shadow: none;
+}
+
+/* line 17, ../../components/social/_blocks.scss */
+.social-action__icon {
+  font-size: 2em;
+}
+
+/* line 21, ../../components/social/_blocks.scss */
+.social-action-block .social-action {
+  font-size: 25px;
+  font-size: 2.5rem;
+}
+@media only screen and (min-width: 750px) {
+  /* line 21, ../../components/social/_blocks.scss */
+  .social-action-block .social-action {
+    font-size: 35px;
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (min-width: 980px) {
+  /* line 21, ../../components/social/_blocks.scss */
+  .social-action-block .social-action {
+    font-size: 45px;
+    font-size: 4.5rem;
+  }
+}
+
+/* line 3, ../../components/teaser/_blocks.scss */
+.teaser-heading {
+  text-align: center;
+  font-size: 25px;
+  font-size: 2.5rem;
+}
+@media only screen and (min-width: 750px) {
+  /* line 3, ../../components/teaser/_blocks.scss */
+  .teaser-heading {
+    font-size: 45px;
+    font-size: 4.5rem;
+  }
+}
+
+/* line 3, ../../components/brand/_blocks.scss */
+.brand {
+  width: 100%;
+  max-width: 400px;
+  margin: 0px auto 28px auto;
+  margin: 0rem auto 2.8rem auto;
+  display: block;
+}
+
+/* line 3, ../../components/social/_elements.scss */
+.social-action-section__column {
+  padding: 0px;
+}
+@media only screen and (min-width: 750px) {
+  /* line 3, ../../components/social/_elements.scss */
+  .social-action-section__column {
+    float: left;
+    width: 28.33333%;
+    margin-right: 5%;
+  }
+}
+
+/* line 15, ../../components/social/_elements.scss */
+.social-action-section__row {
+  margin-right: -5%;
+  margin-left: 0px;
+}
+
 @-moz-keyframes _p-spin {
   0% {
     -moz-transform: rotate(0deg);

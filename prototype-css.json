@@ -8,6 +8,18 @@
         },
         {
             "name": "anim"
+        },
+        {
+            "name": "config"
+        },
+        {
+            "name": "social"
+        },
+        {
+            "name": "teaser"
+        },
+        {
+            "name": "brand"
         }
     ],
     "prototypes": [

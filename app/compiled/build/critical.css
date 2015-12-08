@@ -1,3 +1,17 @@
+/* line 4, ../../prototypes/section/_blocks.scss */
+[class*='-section s_'] {
+  display: block;
+}
+/* line 47, ../../prototypes/config/library/mixins/_util.scss */
+[class*='-section s_']:before, [class*='-section s_']:after {
+  content: "";
+  display: table;
+}
+/* line 52, ../../prototypes/config/library/mixins/_util.scss */
+[class*='-section s_']:after {
+  clear: both;
+}
+
 /* line 4, ../../prototypes/hero/_blocks.scss */
 [class*='-hero s_'] {
   display: block;
@@ -24,8 +38,8 @@
 
 /* line 3, ../../prototypes/heading/_blocks.scss */
 [class*='-heading s_'] {
-  color: #000;
-  font-family: "Lato", sans-serif;
+  color: #272d3a;
+  font-family: arcamajora;
   font-weight: bold;
   display: block;
 }
@@ -131,6 +145,103 @@
   display: block;
 }
 */
+/* line 3, ../../prototypes/section/_elements.scss */
+[class*='-section__header s_'] {
+  display: block;
+}
+/* line 47, ../../prototypes/config/library/mixins/_util.scss */
+[class*='-section__header s_']:before, [class*='-section__header s_']:after {
+  content: "";
+  display: table;
+}
+/* line 52, ../../prototypes/config/library/mixins/_util.scss */
+[class*='-section__header s_']:after {
+  clear: both;
+}
+
+/* line 47, ../../prototypes/config/library/mixins/_util.scss */
+[class*='-section__row s_']:before, [class*='-section__row s_']:after {
+  content: "";
+  display: table;
+}
+/* line 52, ../../prototypes/config/library/mixins/_util.scss */
+[class*='-section__row s_']:after {
+  clear: both;
+}
+@media only screen and (min-width: 750px) {
+  /* line 12, ../../prototypes/section/_elements.scss */
+  [class*='-section__row s_'] {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+/* line 27, ../../prototypes/section/_elements.scss */
+[class*='-section__column s_'] {
+  display: block;
+  margin: 25px auto;
+  margin: 2.5rem auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media only screen and (max-width: 750px) {
+  /* line 27, ../../prototypes/section/_elements.scss */
+  [class*='-section__column s_'] {
+    display: block;
+    text-align: center;
+    max-width: 90%;
+  }
+}
+
+/* line 51, ../../prototypes/section/_elements.scss */
+[class*='-section__heading s_'] {
+  font-size: 37px;
+  font-size: 3.7rem;
+  line-height: 55.5px;
+  line-height: 5.55rem;
+  margin: 18.5px auto;
+  margin: 1.85rem auto;
+  color: #272d3a;
+  font-family: arcamajora;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
+}
+/* line 47, ../../prototypes/config/library/mixins/_util.scss */
+[class*='-section__heading s_']:before, [class*='-section__heading s_']:after {
+  content: "";
+  display: table;
+}
+/* line 52, ../../prototypes/config/library/mixins/_util.scss */
+[class*='-section__heading s_']:after {
+  clear: both;
+}
+
+/* line 62, ../../prototypes/section/_elements.scss */
+[class*='-section__inner s_'] {
+  margin: 0px auto;
+  max-width: 1200px;
+  padding: util-rect-sizing(2.5);
+  padding: util-rect-sizing(2.5);
+}
+/* line 47, ../../prototypes/config/library/mixins/_util.scss */
+[class*='-section__inner s_']:before, [class*='-section__inner s_']:after {
+  content: "";
+  display: table;
+}
+/* line 52, ../../prototypes/config/library/mixins/_util.scss */
+[class*='-section__inner s_']:after {
+  clear: both;
+}
+
+/* line 70, ../../prototypes/section/_elements.scss */
+[class*='-section__inner s_'] [class*='-section__inner s_'] {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 /* line 3, ../../prototypes/hero/_elements.scss */
 [class*='-hero__inner s_'] {
   height: inherit;
@@ -278,43 +389,43 @@
 
 /* line 8, ../../prototypes/heading/_modifiers.scss */
 [class*='-heading--p1'] {
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 2em;
-  margin: 0.5em 0;
+  margin: 0.625em 0;
 }
 
 /* line 8, ../../prototypes/heading/_modifiers.scss */
 [class*='-heading--p2'] {
   font-size: 1.8em;
-  line-height: 1.8em;
+  line-height: 1.44em;
   margin: 0.45em 0;
 }
 
 /* line 8, ../../prototypes/heading/_modifiers.scss */
 [class*='-heading--p3'] {
   font-size: 1.65em;
-  line-height: 1.65em;
+  line-height: 1.32em;
   margin: 0.4125em 0;
 }
 
 /* line 8, ../../prototypes/heading/_modifiers.scss */
 [class*='-heading--p4'] {
   font-size: 1.55em;
-  line-height: 1.55em;
+  line-height: 1.24em;
   margin: 0.3875em 0;
 }
 
 /* line 8, ../../prototypes/heading/_modifiers.scss */
 [class*='-heading--p5'] {
   font-size: 1.4em;
-  line-height: 1.4em;
+  line-height: 1.12em;
   margin: 0.35em 0;
 }
 
 /* line 17, ../../prototypes/heading/_modifiers.scss */
 [class*='-heading--sub'] {
   font-size: 0.7em;
-  line-height: 0.7em;
+  line-height: 0.56em;
   margin: 0.175em 0;
 }
 
@@ -443,52 +554,67 @@
   padding-left: 4.5em;
 }
 
-/* line 521, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
+/* line 521, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
+.debug [class*='-section s_']:hover {
+  outline: 1px solid red;
+}
+/* line 527, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
+.debug [class*='-section s_']::after {
+  content: "{ 'block' : 'section', 'static' : true }";
+  display: none;
+}
+/* line 394, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
+.debug [class*='-section s_']::after {
+  content: "{ 'block' : 'section', 'static' : true }";
+  display: none;
+}
+
+/* line 521, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
 .debug [class*='-hero s_']:hover {
   outline: 1px solid red;
 }
-/* line 527, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
+/* line 527, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
 .debug [class*='-hero s_']::after {
   content: "{ 'block' : 'hero', 'static' : true }";
   display: none;
 }
-/* line 394, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
+/* line 394, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
 .debug [class*='-hero s_']::after {
   content: "{ 'block' : 'hero', 'static' : true }";
   display: none;
 }
 
-/* line 521, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
+/* line 521, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
 .debug [class*='-heading s_']:hover {
   outline: 1px solid red;
 }
-/* line 527, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
+/* line 527, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
 .debug [class*='-heading s_']::after {
   content: "{ 'block' : 'heading', 'static' : true }";
   display: none;
 }
-/* line 394, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
+/* line 394, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
 .debug [class*='-heading s_']::after {
   content: "{ 'block' : 'heading', 'static' : true }";
   display: none;
 }
 
-/* line 521, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
+/* line 521, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
 .debug [class*='-action s_']:hover {
   outline: 1px solid red;
 }
-/* line 527, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
+/* line 527, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
 .debug [class*='-action s_']::after {
   content: "{ 'block' : 'action', 'static' : true }";
   display: none;
 }
-/* line 394, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
+/* line 394, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/prototype-css-1.0.0/sass/_prototype-css.scss */
 .debug [class*='-action s_']::after {
   content: "{ 'block' : 'action', 'static' : true }";
   display: none;
 }
 
-/* line 5, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -510,45 +636,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -584,4 +710,39 @@ a {
 .site {
   height: 100%;
   overflow-x: hidden;
+  font-size: 55%;
+  overflow-y: scroll;
+  /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+}
+@media only screen and (min-width: 750px) {
+  /* line 3, ../../components/site/critical/_blocks.scss */
+  .site {
+    font-size: 75%;
+  }
+}
+@media only screen and (min-width: 980px) {
+  /* line 3, ../../components/site/critical/_blocks.scss */
+  .site {
+    font-size: 85%;
+  }
+}
+
+/* line 3, ../../components/social/_elements.scss */
+.social-action-section__column {
+  padding: 0px;
+}
+@media only screen and (min-width: 750px) {
+  /* line 3, ../../components/social/_elements.scss */
+  .social-action-section__column {
+    float: left;
+    width: 28.33333%;
+    margin-right: 5%;
+  }
+}
+
+/* line 15, ../../components/social/_elements.scss */
+.social-action-section__row {
+  margin-right: -5%;
+  margin-left: 0px;
 }
